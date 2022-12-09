@@ -9,7 +9,7 @@
 	<classpathentry kind="lib" path="Test_Library/freemarker-2.3.23.jar"/>
 	<classpathentry kind="lib" path="Test_Library/jxl.jar"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/Java_Projects/Framework_Training/Test_Library/selenium-server-standalone-3.7.0.jar"/>
-	<classpathentry kind="lib" path="C:/Java_Projects/Framework_Training/Test_Library/extentreports-2.41.2.jar"/>
+	<classpathentry kind="lib" path="Test_Library/extentreports-2.41.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rakesh/git/Selenium_TestAutomation_Framework_PradumnaSir/Test_Library/selenium-server-standalone-3.7.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

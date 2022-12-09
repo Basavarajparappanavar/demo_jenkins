@@ -4,6 +4,8 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.Search.tests.GoogleSearch"/>
+      <class name="com.Search.tests.A"/>
+      <class name="com.Search.tests.GoogleSearch1"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
