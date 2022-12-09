@@ -23,6 +23,9 @@ public class LoginPage extends BasePage{
 	@FindBy(xpath="(//a[@href=\"/customer/info\"])[1]")
 	public WebElement customerInfo;
 	
+	@FindBy(xpath="//a[@class=\"ico-logout\"]")
+	public WebElement logoutLink;
+	
 	public void send_username(String value)
 	{
 		emailFeild.sendKeys(value);

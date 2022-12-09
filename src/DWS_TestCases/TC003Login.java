@@ -22,7 +22,7 @@ public class TC003Login extends BaseTest{
 	}
 	
 
-	@Test(dataProvider = "data")
+	@Test(dataProvider = "data" , groups = "Sample")
 	public void login(String username, String password) {
 		
 		BasePage basepage = new BasePage(driver);
@@ -34,6 +34,5 @@ public class TC003Login extends BaseTest{
 		loginpage.clicl_login_button();
 		
 		Assert.assertEquals(loginpage.customerInfo.getText() , username );
-	}
-
+		clickElement(loginpage.logoutLink
 }

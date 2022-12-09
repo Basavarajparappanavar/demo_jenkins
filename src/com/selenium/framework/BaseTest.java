@@ -56,7 +56,7 @@ public abstract class BaseTest extends FrameworkUtility {
 			test.log(LogStatus.PASS, "Test Script Passed");
 		} else if (result.getStatus() == ITestResult.FAILURE) {
 			//Call a method to capture the screen shot
-			String path = "./../../"+captureScreenShot(method.getName());
+			String path = captureScreenShot(method.getName());
 			test.log(LogStatus.FAIL, result.getThrowable());
 			test.log(LogStatus.FAIL, "Captured ScreenShot: "+test.addScreenCapture(path));
 		} else if (result.getStatus() == ITestResult.SKIP) {

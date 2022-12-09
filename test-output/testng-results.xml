@@ -1,32 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="4" passed="0" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-08T23:26:01 IST" name="Default suite" finished-at="2022-12-08T23:28:31 IST" duration-ms="149195">
+  <suite started-at="2022-12-09T17:59:54 IST" name="Suite" finished-at="2022-12-09T17:59:54 IST" duration-ms="212">
     <groups>
+      <group name="Sample">
+        <method signature="TC001_AssertBooksTab.AssertBooksTab()[pri:0, instance:DWS_TestCases.TC001_AssertBooksTab@1573f9fc]" name="AssertBooksTab" class="DWS_TestCases.TC001_AssertBooksTab"/>
+        <method signature="TC003Login.login(java.lang.String,java.lang.String)[pri:0, instance:DWS_TestCases.TC003Login@6150c3ec]" name="login" class="DWS_TestCases.TC003Login"/>
+      </group> <!-- Sample -->
     </groups>
-    <test started-at="2022-12-08T23:26:01 IST" name="Default test" finished-at="2022-12-08T23:28:31 IST" duration-ms="149195">
-      <class name="DWS_TestCases.TC002Login">
-        <test-method is-config="true" signature="initlizeExtentReportsObject()[pri:0, instance:DWS_TestCases.TC002Login@1a75e76a]" started-at="2022-12-08T23:25:57 IST" name="initlizeExtentReportsObject" finished-at="2022-12-08T23:26:01 IST" duration-ms="4399" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initlizeExtentReportsObject -->
-        <test-method is-config="true" signature="initilizeDriver()[pri:0, instance:DWS_TestCases.TC002Login@1a75e76a]" started-at="2022-12-08T23:26:01 IST" name="initilizeDriver" finished-at="2022-12-08T23:27:31 IST" duration-ms="89202" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initilizeDriver -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:DWS_TestCases.TC002Login@1a75e76a]" started-at="2022-12-08T23:27:33 IST" name="startTest" finished-at="2022-12-08T23:27:51 IST" duration-ms="17698" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void DWS_TestCases.TC002Login.login(java.lang.String,java.lang.String)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTest -->
-        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:DWS_TestCases.TC002Login@1a75e76a]" started-at="2022-12-08T23:27:51 IST" name="login" data-provider="data" finished-at="2022-12-08T23:28:15 IST" duration-ms="24043" status="PASS">
+    <test started-at="2022-12-09T17:59:54 IST" name="Test" finished-at="2022-12-09T17:59:54 IST" duration-ms="212">
+      <class name="DWS_TestCases.TC003Login">
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:DWS_TestCases.TC003Login@6150c3ec]" started-at="2022-12-09T17:59:54 IST" name="login" data-provider="data" finished-at="2022-12-09T17:59:54 IST" duration-ms="2" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -39,34 +24,150 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "com.selenium.framework.CustomWait.forElementToBeVisibleAndEnabled(org.openqa.selenium.WebElement)" because "com.selenium.framework.FrameworkUtility.Wait" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.selenium.framework.CustomWait.forElementToBeVisibleAndEnabled(org.openqa.selenium.WebElement)" because "com.selenium.framework.FrameworkUtility.Wait" is null
+at com.selenium.framework.FrameworkUtility.clickElement(FrameworkUtility.java:64)
+at DWS_TestCases.TC003Login.login(TC003Login.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="logResults(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:DWS_TestCases.TC002Login@1a75e76a]" started-at="2022-12-08T23:28:15 IST" name="logResults" finished-at="2022-12-08T23:28:15 IST" duration-ms="3" status="PASS">
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:DWS_TestCases.TC003Login@6150c3ec]" started-at="2022-12-09T17:59:54 IST" name="login" data-provider="data" finished-at="2022-12-09T17:59:54 IST" duration-ms="3" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=login status=SUCCESS method=TC002Login.login(java.lang.String,java.lang.String)[pri:0, instance:DWS_TestCases.TC002Login@1a75e76a] output={null}]]]>
+                <![CDATA[raki@test.com]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void DWS_TestCases.TC002Login.login(java.lang.String,java.lang.String)]]>
+                <![CDATA[6362606708]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "com.selenium.framework.CustomWait.forElementToBeVisibleAndEnabled(org.openqa.selenium.WebElement)" because "com.selenium.framework.FrameworkUtility.Wait" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.selenium.framework.CustomWait.forElementToBeVisibleAndEnabled(org.openqa.selenium.WebElement)" because "com.selenium.framework.FrameworkUtility.Wait" is null
+at com.selenium.framework.FrameworkUtility.clickElement(FrameworkUtility.java:64)
+at DWS_TestCases.TC003Login.login(TC003Login.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logResults -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:DWS_TestCases.TC002Login@1a75e76a]" started-at="2022-12-08T23:28:15 IST" name="closeApplication" finished-at="2022-12-08T23:28:31 IST" duration-ms="15303" status="PASS">
+        </test-method> <!-- login -->
+      </class> <!-- DWS_TestCases.TC003Login -->
+      <class name="DWS_TestCases.TC001_AssertBooksTab">
+        <test-method signature="AssertBooksTab()[pri:0, instance:DWS_TestCases.TC001_AssertBooksTab@1573f9fc]" started-at="2022-12-09T17:59:54 IST" name="AssertBooksTab" finished-at="2022-12-09T17:59:54 IST" duration-ms="35" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "com.selenium.framework.CustomWait.forElementToBeVisibleAndEnabled(org.openqa.selenium.WebElement)" because "com.selenium.framework.FrameworkUtility.Wait" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.selenium.framework.CustomWait.forElementToBeVisibleAndEnabled(org.openqa.selenium.WebElement)" because "com.selenium.framework.FrameworkUtility.Wait" is null
+at com.selenium.framework.FrameworkUtility.clickElement(FrameworkUtility.java:64)
+at DWS_Pages.BasePage.clickBooksTab(BasePage.java:27)
+at DWS_TestCases.TC001_AssertBooksTab.AssertBooksTab(TC001_AssertBooksTab.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeApplication -->
-        <test-method is-config="true" signature="publishExtentReport()[pri:0, instance:DWS_TestCases.TC002Login@1a75e76a]" started-at="2022-12-08T23:28:31 IST" name="publishExtentReport" finished-at="2022-12-08T23:28:33 IST" duration-ms="1726" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- publishExtentReport -->
-      </class> <!-- DWS_TestCases.TC002Login -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- AssertBooksTab -->
+      </class> <!-- DWS_TestCases.TC001_AssertBooksTab -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

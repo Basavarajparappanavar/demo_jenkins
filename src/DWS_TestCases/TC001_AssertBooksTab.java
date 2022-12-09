@@ -11,7 +11,7 @@ import DWS_Pages.BooksPage;
 public class TC001_AssertBooksTab extends BaseTest {
 	
 	
-	@Test
+	@Test(groups = "Sample")
 	public void AssertBooksTab() {
 		
 		BasePage basepage = new BasePage(driver);

@@ -3,9 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.Search.tests.GoogleSearch"/>
-      <class name="com.Search.tests.A"/>
-      <class name="com.Search.tests.GoogleSearch1"/>
+      <class name="DWS_TestCases.TC002Register"/>
+      <class name="DWS_TestCases.TC001_AssertBooksTab"/>
+      <class name="DWS_TestCases.TC003Login"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

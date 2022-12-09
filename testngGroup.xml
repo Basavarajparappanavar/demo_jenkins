@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+ <groups><run><include name="Sample"></include></run></groups>
+    <classes>
+      <class name="DWS_TestCases.TC002Register"/>
+      <class name="DWS_TestCases.TC001_AssertBooksTab"/>
+      <class name="DWS_TestCases.TC003Login"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

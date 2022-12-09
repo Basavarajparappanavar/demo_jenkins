@@ -34,6 +34,9 @@ public class RegisterPage extends BasePage{
 	@FindBy(id="register-button")
 	public WebElement registerBtn;
 	
+	@FindBy(xpath="(//input[@type=\"button\"])[2]")
+	public WebElement continueBtn;
+	
 	
 	
 

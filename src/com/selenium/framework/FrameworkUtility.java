@@ -160,7 +160,7 @@ public abstract class FrameworkUtility {
 		}catch (Exception e){
 			System.out.println(e.getMessage());
 		}
-		return destpath;
+		return "../../"+destpath;
 	}
 	
 	public void doubleClick(WebElement webelement) {
