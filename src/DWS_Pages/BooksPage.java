@@ -16,6 +16,10 @@ public class BooksPage extends BasePage {
 
 	@FindBy(xpath="//div[@class=\"breadcrumb\"]//strong")
 	public WebElement pageTitle;
+	@FindBy(xpath = "(//input[@value=\"Add to cart\"])[1]")
+	public WebElement add_cart;
+	
+	
 	
 	
 

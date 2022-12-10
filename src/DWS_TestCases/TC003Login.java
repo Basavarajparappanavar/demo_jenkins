@@ -17,7 +17,7 @@ public class TC003Login extends BaseTest{
 	
 	@DataProvider(name = "data")
 	public Object[][] data() throws BiffException, IOException{
-		ExcelLib excel = new ExcelLib("Reservation", this.getClass().getSimpleName());
+		ExcelLib excel = new ExcelLib("DWS", this.getClass().getSimpleName());
 		return excel.getTestdata();
 	}
 	
@@ -34,5 +34,6 @@ public class TC003Login extends BaseTest{
 		loginpage.clicl_login_button();
 		
 		Assert.assertEquals(loginpage.customerInfo.getText() , username );
-		clickElement(loginpage.logoutLink
+		clickElement(loginpage.logoutLink);
+}
 }

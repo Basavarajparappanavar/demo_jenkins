@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="DWS_TestCases.TC001_AssertBooksTab">
+      <class name="DWS_TestCases.TC004EndtoEnd">
         <methods>
-          <include name="AssertBooksTab"/>
           <include name="publishExtentReport"/>
           <include name="closeApplication"/>
           <include name="initilizeDriver"/>
+          <include name="endtoend"/>
           <include name="logResults"/>
           <include name="initlizeExtentReportsObject"/>
           <include name="startTest"/>
         </methods>
-      </class> <!-- DWS_TestCases.TC001_AssertBooksTab -->
+      </class> <!-- DWS_TestCases.TC004EndtoEnd -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

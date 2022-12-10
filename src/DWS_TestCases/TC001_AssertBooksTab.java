@@ -22,7 +22,7 @@ public class TC001_AssertBooksTab extends BaseTest {
 		
 		System.out.println(actualTitle);
 		
-		Assert.assertEquals(actualTitle, "BOOKS");
+		Assert.assertEquals(actualTitle, "BOOK");
 		
 		
 	}

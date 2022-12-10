@@ -18,7 +18,7 @@ public class TC002Register extends BaseTest{
 	
 	@DataProvider(name = "data")
 	public Object[][] data() throws BiffException, IOException{
-		ExcelLib excel = new ExcelLib("Reservation", this.getClass().getSimpleName());
+		ExcelLib excel = new ExcelLib("DWS", this.getClass().getSimpleName());
 		return excel.getTestdata();
 	}
 	

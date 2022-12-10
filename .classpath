@@ -12,7 +12,6 @@
 	<classpathentry kind="lib" path="Test_Library/extentreports-2.41.2.jar"/>
 	<classpathentry kind="lib" path="Test_Library/selenium-server-standalone-3.7.0.jar"/>
 	<classpathentry kind="lib" path="Test_Library/testng-6.9.10.jar"/>
-	<classpathentry kind="lib" path="C:/Users/DELL/Downloads/selenium-server-standalone-3.7.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/DELL/Downloads/jar_files/extentreports-3.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/SELENIUM/selenium-server-standalone-3.7.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

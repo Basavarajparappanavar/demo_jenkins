@@ -16,9 +16,9 @@ public interface FrameworkConstants {
 	
 	public static final String CHROME_DRIVER_KEY = "webdriver.chrome.driver";
 	
-	public static final String IE_DRIVER_PATH = "./Test_Library/IEDriverServer.exe";
+	public static final String IE_DRIVER_PATH = "./Test_Library/msedgedriver.exe";
 	
-	public static final String IE_DRIVER_KEY = "webdriver.ie.driver";
+	public static final String IE_DRIVER_KEY = "webdriver.edge.driver";
 	
 	public static final String SCREEN_SHOT_FOLDER_PATH = "./Test_Results/SnapShots/";
 	
