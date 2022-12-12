@@ -3,10 +3,10 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
+    	<class name="DWS_TestCases.TC002Register"/>
     	<class name="DWS_TestCases.TC003Login"/>
-      <class name="DWS_TestCases.TC002Register"/>
-      <class name="DWS_TestCases.TC001_AssertBooksTab"/>
-      <class name="DWS_TestCases.TC004EndtoEnd"/>
+      	<class name="DWS_TestCases.TC001_AssertBooksTab"/>
+      	<class name="DWS_TestCases.TC004EndtoEnd"/>  
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
